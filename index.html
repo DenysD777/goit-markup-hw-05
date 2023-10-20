@@ -55,7 +55,17 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
       <section class="section hero">
         <div class="container overlay">
         <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button-hero">Замовити послугу</button></div>
+        <button data-modal-open type="button" class="button-hero" >Замовити послугу</button>
+        <div class="backdrop is-hidden" data-modal> 
+<div class="modal">
+  <button class="modal-button" data-modal-close>
+    <svg class="modal-icon" width="18px" height="18px">
+  <use href="./img/icons.svg#spriteclose-black"></use>
+</svg>
+</button> 
+</div>
+        </div>
+      </div>
       </section>
       <!-- Ефективні рішення -->
       <section class="section solution">
