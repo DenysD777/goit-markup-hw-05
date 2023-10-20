@@ -265,6 +265,10 @@ margin-right: auto;
   height: 50px;
   margin-top: 30px;
   padding: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-hero:hover,.button-hero:focus{
+  transform: scale(1.05);
 }
 .backdrop{
   position: fixed;
@@ -288,19 +292,25 @@ height: 581px;
 border-radius: 4px;
 background:var(--first-bg-color);
 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+padding: 8px;
+}
+.modal-button-container{
+  position: relative;
+ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .modal-button{
   position: absolute;
   display: inline-block;
-  top:8px;
-  right: 8px;
+  top:0px;
+  right: 0px;
 width: 30px;
   height: 30px;
   border-radius: 50%;
   border-color: rgba(0, 0, 0, 0.10);
   background-color: var(--first-bg-color);
-  transform: rotateZ('180deg'); 
+  
+  transition: transform  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon{
   position: absolute;
@@ -309,17 +319,12 @@ width: 30px;
   transform: translate(-50%,-50%);
  
 }
-.modal-button:hover,.modal-button:focus{
+.modal-button:hover ,.modal-button:focus{
   cursor: pointer;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.1);
 }
 
-/* .modal-button:hover .modal-icon{
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-button:focus.modal-icon{
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+
 /* Main */
 .main {
   margin: 0;
