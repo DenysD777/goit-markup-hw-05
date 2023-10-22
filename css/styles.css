@@ -27,6 +27,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--first-color-text);
   background-color: var(--first-bg-color);
+  
 }
 
 .list {
@@ -287,11 +288,14 @@ margin-right: auto;
 .is-hidden{
   opacity: 0;
   pointer-events: none;
- visibility: hidden;  
+ visibility: hidden; 
+
 }
 
 .backdrop.is-hidden .modal{
 transform: translate(-50%, -50%) scale(0.7) ;
+
+
 }
 
 .modal{
@@ -306,6 +310,8 @@ background:var(--first-bg-color);
 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 padding: 8px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
 
@@ -434,9 +440,9 @@ color: var(--third-color-text);
 .container.decision .list{
   padding: 0;
 }
-.list-img{
-  display: block;
-} 
+/* .list-img{
+  display: inline-block;
+}  */
 .services .list{
   display: flex;
   gap:30px;
@@ -539,8 +545,7 @@ border-radius: 0px 0px 4px 4px;
   fill:var(--icon-color);
   border-radius: 50%;
   background-color: var(--first-bg-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .network-icon{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -780,7 +785,7 @@ height: 38px;
   border-radius: 4px;
   padding-left: 20px;
   padding-right: 20px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-button:hover,
