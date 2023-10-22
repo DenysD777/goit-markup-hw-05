@@ -287,7 +287,7 @@ margin-right: auto;
 .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
- visibility: visible; ; 
+ visibility: hidden;  
 
 }
 
@@ -426,11 +426,12 @@ gap:30px;
 }
 .services-img-text{
   text-align: center;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.42px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 color: var(--third-color-text);
 }
 .container.decision .list{
@@ -542,7 +543,7 @@ border-radius: 0px 0px 4px 4px;
   border-radius: 50%;
   background-color: var(--first-bg-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+;
 }
 .network-icon{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -724,7 +725,7 @@ fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 44px;
   height:44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.10);
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
 }
@@ -782,8 +783,7 @@ height: 38px;
   border-radius: 4px;
   padding-left: 20px;
   padding-right: 20px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-button:hover,
@@ -818,7 +818,7 @@ height: 38px;
   
   display: inline-block;
   text-decoration: none;
-
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-img{
   position: relative;
